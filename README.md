@@ -1,16 +1,74 @@
-# React + Vite
+# Quiz App 🎯
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully functional Quiz Application built using **React + Vite**, where users can create quizzes, manage them, and play quizzes with score tracking.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+👉 https://quiz-app2026.netlify.app
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📂 GitHub Repository
+👉 https://github.com/Akanksha9839/quiz-app
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+- React (Hooks)
+- Vite
+- React Router DOM
+- JavaScript
+- CSS
+- LocalStorage
+- Netlify
+- GitHub
+
+---
+
+## ✨ Features
+
+### 🔹 Create Quiz
+- Create quiz with title
+- Add multiple questions
+- Supported question types:
+  - MCQ (Single Correct)
+  - MCQ (Multiple Correct)
+  - Short Answer
+  - Descriptive Answer
+- Auto-open question type modal
+- Validations for inputs
+- Save quiz to LocalStorage
+
+### 🔹 My Quizzes
+- View all quizzes
+- Edit quiz title
+- Delete quiz
+- Activate / Deactivate quiz
+- Play quiz option (only when quiz is active)
+
+### 🔹 Play Quiz
+- One question at a time
+- Next & Submit functionality
+- Answer selection tracking
+
+### 🔹 Result Page
+- Score calculation
+- Display total questions & correct answers
+- Clean result UI
+
+---
+
+## 💾 Data Storage
+- Uses **browser LocalStorage**
+- No backend required
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/Akanksha9839/quiz-app.git
+cd quiz-app
+npm install
+npm run dev
