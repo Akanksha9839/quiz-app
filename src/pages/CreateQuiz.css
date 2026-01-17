@@ -1,0 +1,143 @@
+/* ===== PAGE LAYOUT ===== */
+.create-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 24px;
+}
+
+.create-container h2 {
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+/* ===== INPUTS ===== */
+.quiz-title,
+.question-card input,
+.question-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #d0d5dd;
+  font-size: 14px;
+}
+
+.question-card textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+/* ===== QUESTION CARD ===== */
+.question-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  margin-top: 18px;
+}
+
+/* ===== MCQ OPTIONS ===== */
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.option-row input[type="radio"],
+.option-row input[type="checkbox"] {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* ===== BUTTONS ===== */
+.add-btn {
+  background: #0aa6a6;
+  color: #fff;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+}
+
+.save-btn {
+  margin-top: 22px;
+  background: #0aa6a6;
+  color: white;
+  padding: 14px;
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  opacity: 0.9;
+}
+
+/* ===== SAVED QUESTIONS ===== */
+.saved-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8fafc;
+  padding: 10px 12px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+.saved-question button {
+  background: transparent;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* ===== MODAL ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: #ffffff;
+  padding: 26px;
+  width: 340px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.modal-box h3 {
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.modal-box button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #f3f4f6;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.modal-box button:hover {
+  background: #e5e7eb;
+}

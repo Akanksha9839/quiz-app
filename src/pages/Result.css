@@ -1,0 +1,44 @@
+/* ===== Wrapper ===== */
+.result-wrapper {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Result Card ===== */
+.result-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.result-card h2 {
+  margin-bottom: 20px;
+  color: #10b981;
+}
+
+.score {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #374151;
+}
+
+/* ===== Button ===== */
+.result-card button {
+  padding: 12px 20px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.result-card button:hover {
+  background: #2563eb;
+}
