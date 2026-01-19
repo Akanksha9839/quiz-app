@@ -1,74 +1,90 @@
-# Quiz App 🎯
+# 🧠 Quiz App – Capstone Project
 
-A fully functional Quiz Application built using **React + Vite**, where users can create quizzes, manage them, and play quizzes with score tracking.
+## 📌 Project Overview
+The Quiz App is a fully functional web application built using React that allows users to create, manage, and play quizzes in an interactive way.
+
+It supports quiz creation with multiple questions, real-time quiz playing, score calculation, and result display — all with a clean and user-friendly interface.
+
+This project is developed as part of the **AlmaBetter Foundation Track Capstone Project**.
 
 ---
 
 ## 🚀 Live Demo
-👉 https://quiz-app2026.netlify.app
+- **Deployed Link (Netlify):**  
+  https://quiz-app2026.netlify.app
 
----
-
-## 📂 GitHub Repository
-👉 https://github.com/Akanksha9839/quiz-app
-
----
-
-## 🛠 Tech Stack
-- React (Hooks)
-- Vite
-- React Router DOM
-- JavaScript
-- CSS
-- LocalStorage
-- Netlify
-- GitHub
+- **GitHub Repository:**  
+  https://github.com/Akanksha9839/quiz-app
 
 ---
 
 ## ✨ Features
 
-### 🔹 Create Quiz
-- Create quiz with title
-- Add multiple questions
-- Supported question types:
-  - MCQ (Single Correct)
-  - MCQ (Multiple Correct)
-  - Short Answer
-  - Descriptive Answer
-- Auto-open question type modal
-- Validations for inputs
-- Save quiz to LocalStorage
+### 📝 Create Quiz
+- Create quizzes with multiple questions  
+- Each question supports **4 options**  
+- Select the correct answer for each question  
+- Automatic validation to prevent empty inputs  
 
-### 🔹 My Quizzes
-- View all quizzes
-- Edit quiz title
-- Delete quiz
-- Activate / Deactivate quiz
-- Play quiz option (only when quiz is active)
+### 📂 My Quizzes
+- View all created quizzes  
+- Edit quiz titles  
+- Delete quizzes with confirmation modal  
+- Enable/disable quizzes using status toggle  
 
-### 🔹 Play Quiz
-- One question at a time
-- Next & Submit functionality
-- Answer selection tracking
+### ▶️ Play Quiz
+- One question displayed at a time  
+- Select one option per question  
+- Navigate using **Next** button  
+- Submit quiz after the last question  
 
-### 🔹 Result Page
-- Score calculation
-- Display total questions & correct answers
-- Clean result UI
+### 📊 Result Page
+- Displays final score  
+- Shows total questions and correct answers  
 
 ---
 
-## 💾 Data Storage
-- Uses **browser LocalStorage**
-- No backend required
+## 💾 Data Persistence
+- Quiz data is stored in **LocalStorage**
+- Data remains available after page refresh
 
 ---
 
-## 📦 Installation
+## 🛠️ Tech Stack
+- React JS  
+- React Router DOM  
+- JavaScript (ES6+)  
+- CSS  
+- Vite  
 
+---
+
+## 📁 Project Folder Structure
+src/ ├── components/ ├── context/ ├── pages/ ├── App.jsx ├── main.jsx └── index.css
+
+---
+
+## 📱 Responsive Design
+- Fully responsive UI
+- Works on desktop, tablet, and mobile
+
+---
+
+## 🎥 Demo Video
+A video walkthrough is included explaining:
+- App overview
+- Quiz creation
+- Quiz playing
+- Result display
+
+---
+
+## ⚙️ Installation & Setup
 ```bash
 git clone https://github.com/Akanksha9839/quiz-app.git
 cd quiz-app
 npm install
 npm run dev
+
+👩‍💻 Author
+Akanksha
