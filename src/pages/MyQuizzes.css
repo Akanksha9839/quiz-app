@@ -1,23 +1,47 @@
-/* ===== Wrapper ===== */
-.mq-wrapper {
+/* ===== PAGE WRAPPER ===== */
+.mq-page {
   max-width: 1100px;
   margin: 30px auto;
-  padding: 20px;
+  padding: 25px;
   background: #f9fbfc;
   border-radius: 10px;
 }
 
-.mq-wrapper h2 {
+/* ===== HEADER (TITLE + BUTTON) ===== */
+.mq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
-  font-size: 26px;
-  color: #1f2937;
 }
 
-/* ===== Table ===== */
+.mq-header h2 {
+  font-size: 26px;
+  color: #1f2937;
+  margin: 0;
+}
+
+/* ===== CREATE BUTTON ===== */
+.create-btn {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.create-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* ===== TABLE ===== */
 .mq-table {
   width: 100%;
   border-collapse: collapse;
-  background: white;
+  background: #ffffff;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -46,7 +70,7 @@
   background: #f3f6ff;
 }
 
-/* ===== Title ===== */
+/* ===== TITLE CLICK ===== */
 .mq-title {
   color: #2563eb;
   cursor: pointer;
@@ -57,14 +81,13 @@
   text-decoration: underline;
 }
 
-/* ===== Actions ===== */
+/* ===== ACTION BUTTONS ===== */
 .mq-actions {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-/* Common Button */
 .mq-actions button {
   padding: 6px 12px;
   border-radius: 6px;
@@ -85,26 +108,26 @@
 }
 
 /* Edit */
-.mq-actions button:nth-child(2) {
+.edit-btn {
   background: #3b82f6;
   color: white;
 }
 
-.mq-actions button:nth-child(2):hover {
+.edit-btn:hover {
   background: #2563eb;
 }
 
 /* Delete */
-.mq-actions button:nth-child(3) {
+.delete-btn {
   background: #ef4444;
   color: white;
 }
 
-.mq-actions button:nth-child(3):hover {
+.delete-btn:hover {
   background: #dc2626;
 }
 
-/* ===== Toggle Switch ===== */
+/* ===== TOGGLE SWITCH ===== */
 .switch {
   position: relative;
   display: inline-block;
@@ -121,10 +144,7 @@
 .slider {
   position: absolute;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background-color: #d1d5db;
   transition: 0.4s;
   border-radius: 20px;
@@ -150,7 +170,7 @@ input:checked + .slider:before {
   transform: translateX(22px);
 }
 
-/* ===== Modal ===== */
+/* ===== MODAL ===== */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -182,10 +202,9 @@ input:checked + .slider:before {
   margin-bottom: 15px;
 }
 
-/* Modal Buttons */
+/* ===== MODAL BUTTONS ===== */
 .modal-actions {
   display: flex;
-  justify-content: space-between;
   gap: 10px;
 }
 
@@ -199,59 +218,31 @@ input:checked + .slider:before {
 }
 
 /* Yes */
-.modal-actions button:first-child {
+.modal-actions .confirm {
   background: #10b981;
   color: white;
 }
 
-.modal-actions button:first-child:hover {
+.modal-actions .confirm:hover {
   background: #059669;
 }
 
 /* No */
-.modal-actions button:last-child {
+.modal-actions .cancel {
   background: #9ca3af;
   color: white;
 }
 
-.modal-actions button:last-child:hover {
+.modal-actions .cancel:hover {
   background: #6b7280;
 }
 
 /* Delete danger */
 .modal-actions .danger {
   background: #ef4444;
+  color: white;
 }
 
 .modal-actions .danger:hover {
   background: #dc2626;
-}
-/* ===== Header (Title + Create Button) ===== */
-.mq-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.mq-header h2 {
-  margin: 0;
-  font-size: 26px;
-  color: #1f2937;
-}
-
-/* Create Button */
-.create-btn {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.create-btn:hover {
-  background-color: #0056b3;
 }
