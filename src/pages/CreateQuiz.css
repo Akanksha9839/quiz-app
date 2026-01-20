@@ -126,18 +126,23 @@
   margin-bottom: 16px;
   font-weight: 600;
 }
-
-.modal-box button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 8px;
-  border: 1px solid #e5e7eb;
-  background: #f3f4f6;
-  cursor: pointer;
-  font-size: 14px;
+.myquizzes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.modal-box button:hover {
-  background: #e5e7eb;
+.create-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background-color: #0056b3;
 }
