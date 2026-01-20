@@ -226,17 +226,18 @@ input:checked + .slider:before {
 .modal-actions .danger:hover {
   background: #dc2626;
 }
+.mq-wrapper {
+  display: flex;
+  justify-content: space-between; /* 🔥 key line */
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
 .create-btn {
-  background-color: #2563eb;
-  color: white;
+  background-color: #007bff;
+  color: #fff;
   border: none;
   padding: 10px 18px;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 15px;
-  margin-bottom: 16px;
-}
-
-.create-btn:hover {
-  background-color: #1e40af;
 }
