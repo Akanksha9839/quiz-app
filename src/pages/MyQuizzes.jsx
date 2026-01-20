@@ -51,15 +51,14 @@ export default function MyQuizzes() {
   };
 
   return (
-    <div className="mq-wrapper">
-     <h2>My Quizzes</h2>
-
-     <button
-      className="create-btn"
-      onClick={() => navigate("/create")}
-     >
-      + Create New Quiz
-     </button>
+    <div className="my-quizzes-container">
+      {/* 🔥 HEADER FIXED */}
+      <div className="mq-header">
+        <h2>My Quizzes</h2>
+        <button className="create-btn" onClick={() => navigate("/create")}>
+          + Create New Quiz
+        </button>
+      </div>
 
       {quizzes.length === 0 ? (
         <p>No quizzes found</p>
@@ -80,10 +79,7 @@ export default function MyQuizzes() {
               <tr key={quiz.id}>
                 <td>{i + 1}</td>
 
-                <td
-                  className="mq-title"
-                  onClick={() => openEdit(quiz)}
-                >
+                <td className="mq-title" onClick={() => openEdit(quiz)}>
                   {quiz.title}
                 </td>
 
@@ -109,8 +105,16 @@ export default function MyQuizzes() {
                       ▶ Play
                     </button>
                   )}
-                  <button onClick={() => openEdit(quiz)}>Edit</button>
-                  <button onClick={() => setDeleteId(quiz.id)}>
+                  <button
+                    className="edit-btn"
+                    onClick={() => openEdit(quiz)}
+                  >
+                    Edit
+                  </button>
+                  <button
+                    className="delete-btn"
+                    onClick={() => setDeleteId(quiz.id)}
+                  >
                     Delete
                   </button>
                 </td>
