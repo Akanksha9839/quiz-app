@@ -53,6 +53,12 @@ export default function MyQuizzes() {
   return (
     <div className="mq-wrapper">
       <h2>My Quizzes</h2>
+      <button
+        className="create-btn"
+        onClick={() => navigate("/create")}
+      >
+        + Create New Quiz
+      </button>   
 
       {quizzes.length === 0 ? (
         <p>No quizzes found</p>
