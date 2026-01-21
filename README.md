@@ -1,66 +1,45 @@
-## Project Overview
-The Quiz App is a fully functional web application built using React that allows users to create, manage, and play quizzes in an interactive way.  
-It supports quiz creation with multiple questions, real-time quiz playing, score calculation, and result display — all with a clean and user-friendly interface.
+# Quiz App 📝
 
-This project is developed as part of the AlmaBetter Foundation Track Capstone Project.
-
----
-
-## 🔗 Live Demo
-- **Deployed Link (Netlify):**  
-  https://quiz-app2026.netlify.app
-- **GitHub Repository:**  
-  https://github.com/Akanksha9839/quiz-app
+A fully functional Quiz Application built using React and Vite.  
+This app allows users to create quizzes, manage them, play quizzes, and view results.
 
 ---
 
-## ✨ Features
-
-### 📝 Create Quiz
-- Create a new quiz using the **Create New Quiz** button from the My Quizzes page
-- Add multiple questions to a quiz
-- Each question supports **4 options**
-- Select the correct answer for each question
-- Input validation to prevent empty fields
-
-### 📋 My Quizzes
-- View all created quizzes in a structured table
-- Enable or disable quizzes using the status toggle
-- Edit quiz titles
-- Delete quizzes with a confirmation modal
-- Easily navigate to quiz creation using the **Create New Quiz** button
-
-### ▶️ Play Quiz
-- Play only active quizzes
-- Questions are displayed one by one
-- Select one option per question
-- Navigate using Next and Submit buttons
-
-### 📊 Result
-- Displays final score after quiz completion
-- Shows total questions vs correct answers
-- Option to return back to My Quizzes
+## 🚀 Live Demo
+🔗 https://akanksha9839.github.io/quiz-app/
 
 ---
 
-## 🛠️ Technologies Used
-- React.js (Functional Components & Hooks)
-- React Router DOM for routing
-- CSS for styling and responsive UI
-- LocalStorage for data persistence
-- Vite for fast development and build
+## 📌 Features
+
+- Create a new quiz with multiple question types:
+  - MCQ (Single Correct)
+  - MCQ (Multiple Correct)
+  - Short Answer
+  - Descriptive Questions
+- Add, edit, and delete quizzes
+- Activate / deactivate quizzes
+- Play quizzes and navigate through questions
+- View final score on result page
+- Data persistence using LocalStorage
+- Fully responsive UI
+- Deployed using GitHub Pages
 
 ---
 
-## 📁 Project Structure
-- `components/` – Reusable UI components
-- `pages/` – Home, Create Quiz, My Quizzes, Play Quiz, Result
-- `context/` – Quiz state management
-- `assets/` – Static assets
-- `App.jsx` – Routing configuration
+## 🛠 Tech Stack
+
+- React
+- Vite
+- React Router DOM
+- JavaScript (ES6)
+- CSS
+- GitHub Pages
 
 ---
 
-## 🚀 Deployment
-- Deployed using **Netlify**
-- Source code hosted on **GitHub**
+## 📂 Project Setup (Run Locally)
+
+```bash
+npm install
+npm run dev
