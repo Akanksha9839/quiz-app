@@ -1,5 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import CreateQuiz from "./pages/CreateQuiz";
@@ -9,8 +8,8 @@ import Result from "./pages/Result";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      {/* Navbar har page pe dikhna chahiye */}
+    <HashRouter>
+      {/* Navbar har page pe dikhega */}
       <Navbar />
 
       <Routes>
@@ -20,6 +19,6 @@ export default function App() {
         <Route path="/play/:id" element={<PlayQuiz />} />
         <Route path="/result" element={<Result />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
