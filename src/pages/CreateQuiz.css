@@ -105,7 +105,10 @@
 /* ===== MODAL ===== */
 .modal-overlay {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.45);
   display: flex;
   justify-content: center;
@@ -115,10 +118,22 @@
 
 .modal-box {
   background: #ffffff;
-  padding: 26px;
-  width: 340px;
-  border-radius: 12px;
+  padding: 24px;
+  width: 320px;
+  border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  max-width: 90%;
+  text-align: center;
+}
+.modal-box button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .modal-box h3 {
